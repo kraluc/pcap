@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+ipython = "*"
+
+[packages]
+black = "==21.11b1"
+click = "==8.0.3"
+mypy-extensions = "==0.4.3"
+pathspec = "==0.9.0"
+platformdirs = "==2.4.0"
+pygame = "==2.1.1.dev1"
+regex = "==2021.11.10"
+tomli = "==1.2.2"
+typing-extensions = "==4.0.0"
+
+[requires]
+python_version = "3.10"
+
+[pipenv]
+allow_prereleases = true
