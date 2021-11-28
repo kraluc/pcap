@@ -83,11 +83,15 @@ def main(input_text: str):
 
     if all_there(rows + cols + squares):
         print("Yes")
+        return True
     else:
         print("No")
+        return False
 
 
 if __name__ == "__main__":
+
+    # Working example
     input_text = """
     295743861
     431865927
@@ -108,8 +112,9 @@ if __name__ == "__main__":
     #             input_text += new_line + "\n"
     #             break
 
-    main(input_text.strip())
+    assert main(input_text.strip()) == True
 
+    # Failing example
     input_text = """
     195743862
     431865927
@@ -122,4 +127,4 @@ if __name__ == "__main__":
     254938671
     """
 
-    main(input_text.strip())
+    assert main(input_text.strip()) == False
