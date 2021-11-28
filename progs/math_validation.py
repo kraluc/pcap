@@ -30,7 +30,7 @@ def valid_float(text: str) -> float:
         raise ValueError
 
 
-# get a valid float (this test ensures the number is positive but misses the case where someone enters +1.3)
+# get a valid positive float - accepts leading '+' and possible presence of a single '.' and at least one digit
 while True:
     try:
         x = valid_float(input("Enter a positive float: "))
