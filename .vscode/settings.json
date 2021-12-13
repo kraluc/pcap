@@ -1,5 +1,10 @@
 {
     "python.analysis.extraPaths": [
         "./packages"
+    ],
+    "cSpell.words": [
+        "getx",
+        "gety",
+        "Weeker"
     ]
 }
